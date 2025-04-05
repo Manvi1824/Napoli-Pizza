@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
 
@@ -29,7 +30,9 @@
         <li><a href="#reviews" class="nav">Reviews</a></li>
         <li><a href="#contact" class="nav">Contact Us</a></li>
     </nav>
-
+    <div class="sticky-cart">
+        <i class="fas fa-shopping-cart"></i>
+      </div>
     <section id="home">
         <h1 class="hero-heading">Welcome to Napoli Slice</h1>
         <h2 class="hero-subheading">Experience the true taste of Italy 🍕</h2>
@@ -59,36 +62,55 @@
         <h3>Margherita</h3>
         <p class="item-detail">The timeless classic with fresh mozzarella, basil, and rich tomato sauce.</p>
         <span class="price">₹399</span>
+        <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i> Add to Cart
+          </button>
+          
     </div>
     <div class="menu-card">
         <img src="marinara.jpg" alt="" class="menu-img">
         <h3>Marinara</h3>
         <p class="item-detail"> A bold, cheese-free classic topped with tomato, garlic, and herbs.</p>
         <span class="price">₹449</span>
+        <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i> Add to Cart
+          </button>
     </div>
     <div class="menu-card">
         <img src="funghi-porcini.jpg" alt="" class="menu-img">
         <h3>Margherita</h3>
         <p class="item-detail">Earthy mushrooms meet creamy mozzarella on a golden crust.</p>
         <span class="price">₹449</span>
+        <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i> Add to Cart
+          </button>
     </div>
     <div class="menu-card">
         <img src="ortolana.jpg" alt="" class="menu-img">
         <h3>Margherita</h3>
         <p class="item-detail">Grilled garden veggies with olive oil and herbs on a thin, crispy crust.</p>
         <span class="price">₹529</span>
+        <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i> Add to Cart
+          </button>
     </div>
     <div class="menu-card">
         <img src="quattro-formaggi.jpg" alt="" class="menu-img">
         <h3>Margherita</h3>
         <p class="item-detail">  A cheesy delight with four indulgent Italian cheeses.</p>
         <span class="price">₹499</span>
+        <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i> Add to Cart
+          </button>
     </div>
     <div class="menu-card">
         <img src="caprese.jpg" alt="" class="menu-img">
         <h3>Margherita</h3>
         <p class="item-detail">A pizza version of the beloved Caprese salad – fresh, simple, perfect.</p>
         <span class="price">₹399</span>
+        <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i> Add to Cart
+          </button>
     </div>
 </div>
     </section>
@@ -104,36 +126,54 @@
         <h3>Diavola</h3>
         <p class="item-detail">Spicy and bold with Italian pepperoni, tomato sauce, mozzarella, and chili oil.</p>
         <span class="price">₹499</span>
+        <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i> Add to Cart
+          </button>
     </div>
     <div class="menu-card">
         <img src="pollo-e-funchi.png" alt="" class="menu-img">
         <h3>Pollo E Funchi</h3>
         <p class="item-detail"> Tender grilled chicken, mushrooms, mozzarella, and white garlic cream sauce.</p>
         <span class="price">₹479</span>
+        <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i> Add to Cart
+          </button>
     </div>
     <div class="menu-card">
         <img src="prosciutto-e-rucola.png" alt="" class="menu-img">
         <h3>Prosciutto E Rucola</h3>
         <p class="item-detail">Cured Italian prosciutto, fresh arugula, mozzarella, and shaved parmesan.</p>
         <span class="price">₹529</span>
+        <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i> Add to Cart
+          </button>
     </div>
     <div class="menu-card">
         <img src="salsiccia-piccante.png" alt="" class="menu-img">
         <h3>Salsiccia Piccante</h3>
         <p class="item-detail">Spicy Italian sausage with roasted red peppers, mozzarella, and tomato sauce.</p>
         <span class="price">₹549</span>
+        <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i> Add to Cart
+          </button>
     </div>
     <div class="menu-card">
         <img src="tonna-e-cipolla.png" alt="" class="menu-img">
         <h3>Tonna E Cipolla</h3>
         <p class="item-detail">  Tuna and red onions over a base of tomato sauce and melted cheese.</p>
         <span class="price">₹459</span>
+        <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i> Add to Cart
+          </button>
     </div>
     <div class="menu-card">
         <img src="polo-bbq-italiano.png" alt="" class="menu-img">
         <h3>Polo BBQ Italiano</h3>
         <p class="item-detail">A pizza version of the beloved Caprese salad – fresh, simple, perfect.</p>
         <span class="price">₹499</span>
+        <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i> Add to Cart
+          </button>
     </div>
 </div>
     </section>
@@ -145,6 +185,9 @@
             <h1>Antonio Carluccio</h1>
             <p class="banner-para">Introducing his famous "Truffle Delight Pizza" – loaded with wild mushrooms and white sauce.</p>
             <span class="chef-special-price">₹499</span>
+            <button class="cart-btn">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
         </div>
     </div>
         <div class="chef-banner hidden">
@@ -153,6 +196,9 @@
             <h1>Chef Massimo</h1>
             <p class="banner-para">"Mediterranean Magic" with olives, sun-dried tomatoes, and feta cheese.</p>
             <span class="chef-special-price">₹749</span>
+            <button class="cart-btn">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
         </div>
     </div>
         <div class="chef-banner hidden">
@@ -161,6 +207,9 @@
             <h1>Chef Marco</h1>
             <p class="banner-para">"Prosciutto Elegante" – rich with ham, arugula, and balsamic drizzle.</p>
             <span class="chef-special-price">₹849</span>
+            <button class="cart-btn">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
         </div>
     </div>
         <div class="chef-banner hidden">
@@ -169,6 +218,9 @@
             <h1>Chef Leonardo</h1>
             <p class="banner-para">"Spicy Napoli" with pepperoni, chili flakes, and melted mozzarella.</p>
             <span class="chef-special-price">₹699</span>
+            <button class="cart-btn">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
         </div>
     </div>
         <div class="chef-banner hidden">
@@ -177,6 +229,9 @@
             <h1>Chef Gennaro</h1>
             <p class="banner-para">"Rustica BBQ Chicken" with caramelized onions and smoky BBQ sauce.</p>
             <span class="chef-special-price">₹899</span>
+            <button class="cart-btn">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
         </div>
     </div>
     </section>
