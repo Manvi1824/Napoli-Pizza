@@ -33,26 +33,62 @@ body {
     justify-content: center;
     display: flex;
     background-color: #8B0000;
+    position: relative;
+    z-index: 1000;
 
 }
-.navbar a{
-    text-decoration: none;
-    color: #2D2D2D;
+.navbar li{
+    list-style: none;
+    transition: transform 0.3sec ease-in-out;
+}
+.navbar li:hover{
+
+    transform: scale(1.3);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    color: #fd876d; /* Example color change */
+}
+    .navbar a{
+        text-decoration: none;
+    color:#F2FFF0;
     font-family: "Playfair Display", serif;
     font-weight: bold;
     letter-spacing: 2px;
-
-
-    /* gap: 40px; */
     
 }
 .navbar a:hover{
+
 color: #B22222;
 }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 120px;
+    z-index: 1;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1001;
+    padding: 5px;
+    /* color: white; */
+  }
+  
+  .dropdown-content li {
+    border-bottom: 1px solid rgba(5, 5, 5, 0.2);
+    /* color: wheat; */
+    
+  }
+  .dropdown-content li a{
+    color: wheat;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 .logo{
-    max-width: 90px;
+    max-width: 120px;
     width: auto;
     height: auto;
+    /* filter: drop-shadow(3px 3px 8px rgba(2, 2, 2, 0.5)); */
 }
 #home {
     position: relative; /* Pseudo element ke liye */
@@ -109,7 +145,9 @@ color: #B22222;
     align-items: center;
     background-color: #C4A484;
 padding: 10px;
-    
+border: 6px solid #5A3E2B;
+border-radius: 8px;
+
     
 }
 .about{
@@ -168,65 +206,314 @@ margin-top: 40px;
     transform: scale(1.05);     /* Slight zoom effect */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
+#veg-menu{
+    background-color: #F2FFF0;
+    padding: 12px;
 
-#menu {
-    background-color:#E0C097; /* Light brown classy background */
-    padding: 60px 0;
-    text-align: center;
-    
+text-align: center;
+border-left: 30px solid #228B22;
 }
-
-.menu-heading {
-    font-size: 36px;
-    color: #8B0000; /* Dark Red */
-    margin-bottom: 20px;
+#veg-menu h1{
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    font-size: 30px;
+    /* margin-top: 5px; */
 }
-
-.menu-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.menu-container{
     display: grid;
-    /* padding-left: 1%; */
-padding-left: 30px;
-    grid-template-columns: repeat(3, 1fr);
-}
+    grid-template-columns:repeat(3,1fr) ;
+    width: auto;
+    height: auto;
+    margin: 0 auto; /* centers container in the page */
+    padding: 20px;
+    padding-top: 40px;
+    gap: 20px;
+    max-width: 1000px;
 
-.menu-item {
-    background: white;
-    width: 320px;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.menu-card{
+    background-color: #D6A77A;
+
+    width: 300px;
+    margin: 3px;
+    padding: 30px;
+    border-radius: 20px;
     text-align: center;
-    transition: all 0.5s ease-in-out;
-    margin-left: 35px;
-    
+    transition: transform 0.4s ease-in-out;
+    animation: none;
+    cursor: pointer;
+
 }
-.menu-item:hover{
-    transform: scale(1.3); /* Image ko thoda zoom karega */
-    opacity: 1;
+
+  .menu-card:hover {
+      transform: scale(1.3);
 }
-.menu-item img {
+  
+
+.menu-img{
+    /* max-width: 250px; */
     width: 100%;
-    height: 200px;
-    border-radius: 10px;
+    height: auto;
+}
+h3{
+    color:  #8B0000;
+    font-family: 'Playfair Display', serif;
+    margin: 5px;
+}
+.item-detail{
+    font-family:'Poppins', sans-serif;
+   color: #4A4A4A;
+   font-size: 13px;
+}
+.price{
+    color:  #8B0000;
+    font-family: 'Poppins', sans-serif;
+    /* margin-top: 10px; */
 }
 
-.menu-text h3 {
-    color: #2D2D2D;
-    font-size: 22px;
-    margin: 10px 0;
-}
+#nonveg-menu{
+    background-color: #FFF4F4;
+    padding: 12px;
 
-.menu-text p {
-    font-size: 16px;
-    color: #555;
+    border-left: 30px solid #8B0000;
+text-align: center;
 }
-
-.price {
-    font-size: 20px;
+#nonveg-menu h1{
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    font-size: 30px;
+}
+  
+  .divider {
+    text-align: center;
+    position: relative;
+    margin: 50px 0;
+  }
+  .divider hr {
+    border: none;
+    height: 2px;
+    background-color: #8B0000;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .divider span {
+    position: relative;
+    top: -15px;
+    background: white;
+    padding: 0 15px;
+    font-size: 24px;
+  }
+  #chef-special{
+    /* display: flex; */
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+  #chef-banner-section {
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  
+  .chef-banner {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.6s ease-in-out;
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  
+  .chef-banner.show {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .chef-banner img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .chef-info h3 {
+    margin: 0;
     color: #8B0000;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .chef-info p {
+    margin: 5px 0;
+    font-family: 'Lora', serif;
+    color: #444;
+  }
+  
+  .price {
     font-weight: bold;
-}
+    color: #2D2D2D;
+  }
+  
+  .hidden {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  
+  .banner-content p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  .banner-content span {
+    display: inline-block;
+    margin-top: 5px;
+    color: #444;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  .banner img{
+    max-width: 250px;
+    width: auto;
+    height: auto;
+  }
+
+
+  #reviews {
+    padding: 60px 20px;
+    background-color: #fff5ee;
+    text-align: center;
+  }
+  
+  .review-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #8B0000;
+    margin-bottom: 40px;
+  }
+  
+  .review-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .review-card {
+    background-color: #fdf9f5;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    font-family: 'Lora', serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+  }
+  
+  .review-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #FFD700;
+  }
+  
+  .review-card p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .review-card span {
+    font-weight: bold;
+    color: #8B0000;
+  }
+  #contact {
+    background-color: #fff5ee;
+    padding: 60px 20px;
+    font-family: 'Lora', serif;
+  }
+  
+  .contact-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #8B0000;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Lora', serif;
+  }
+  
+  .contact-form button {
+    background-color: #8B0000;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #a80000;
+  }
+  
+  .contact-info {
+    background-color: #fdf9f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .contact-info h3 {
+    margin-bottom: 15px;
+    color: #2D2D2D;
+  }
+  
+  .contact-info p {
+    color: #444;
+    margin: 8px 0;
+    font-size: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .contact-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .contact-form,
+    .contact-info {
+      flex: 0 1 48%;
+    }
+  }
+  
+
+
+  @media (max-width:786px){
+
+  }

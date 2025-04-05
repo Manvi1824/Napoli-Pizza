@@ -7,19 +7,27 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 
 
 </head>
 <body>
     <header class="header"></header>
     <nav class="navbar">
-        <a href="#home" class="nav">Home</a>
-        <a href="#about" class="nav">About Us</a>
-        <a href="#menu" class="nav">Menu</a>
-        <img src="Napoli Pizza.png" alt="" class="logo">
-        <a href="#chef-special" class="nav">Chef's Special</a>
-        <a href="#review" class="nav">Reviews</a>
-        <a href="#contact" class="nav">Contact Us</a>
+        <li><a href="#home" class="nav">Home</a></li>
+        <li><a href="#about" class="nav">About Us</a></li>
+        <li class="dropdown">
+            <a href="#">Menu ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="#veg-menu">Veg</a></li>
+              <li><a href="#nonveg-menu">Non-Veg</a></li>
+            </ul>
+          </li>
+         <img src="napoli-logo.png" alt="" class="logo">
+        <li><a href="#chef-special" class="nav">Chef's Special</a></li>
+        <li><a href="#reviews" class="nav">Reviews</a></li>
+        <li><a href="#contact" class="nav">Contact Us</a></li>
     </nav>
 
     <section id="home">
@@ -43,87 +51,200 @@
         </div>
     </section>
 
-    <section id="menu">
-        <h2 class="menu-heading">Our Special Menu</h2>
-        
-        <div class="menu-container">
-            <div class="menu-item">
-                <img src="pizza1.jpg" alt="Margherita Pizza">
-                <div class="menu-text">
-                    <h3>Margherita Pizza</h3>
-                    <p>Classic Italian pizza topped with fresh mozzarella, basil, and a drizzle of olive oil.</p>
-                    <span class="price">$12.99</span>
-                </div>
-            </div>
-    
-            <div class="menu-item">
-                <img src="pizza2.jpg" alt="Pepperoni Pizza">
-                <div class="menu-text">
-                    <h3>Pepperoni Pizza</h3>
-                    <p>Loaded with spicy pepperoni slices, melted cheese, and a crispy crust.</p>
-                    <span class="price">$14.99</span>
-                </div>
-            </div>
-    
-            <div class="menu-item">
-                <img src="pizza3.jpg" alt="Italian Pasta">
-                <div class="menu-text">
-                    <h3>Classic Italian Pasta</h3>
-                    <p>Freshly made pasta tossed in rich tomato sauce with Parmesan cheese.</p>
-                    <span class="price">$10.99</span>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="pizza4.jpg" alt="Italian Pasta">
-                <div class="menu-text">
-                    <h3>Classic Italian Pasta</h3>
-                    <p>Freshly made pasta tossed in rich tomato sauce with Parmesan cheese.</p>
-                    <span class="price">$10.99</span>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="pizza5.jpg" alt="Italian Pasta">
-                <div class="menu-text">
-                    <h3>Classic Italian Pasta</h3>
-                    <p>Freshly made pasta tossed in rich tomato sauce with Parmesan cheese.</p>
-                    <span class="price">$10.99</span>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="pizza6.jpg" alt="Italian Pasta">
-                <div class="menu-text">
-                    <h3>Classic Italian Pasta</h3>
-                    <p>Freshly made pasta tossed in rich tomato sauce with Parmesan cheese.</p>
-                    <span class="price">$10.99</span>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="pizza7.jpg" alt="Italian Pasta">
-                <div class="menu-text">
-                    <h3>Classic Italian Pasta</h3>
-                    <p>Freshly made pasta tossed in rich tomato sauce with Parmesan cheese.</p>
-                    <span class="price">$10.99</span>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="pizza8.jpg" alt="Italian Pasta">
-                <div class="menu-text">
-                    <h3>Classic Italian Pasta</h3>
-                    <p>Freshly made pasta tossed in rich tomato sauce with Parmesan cheese.</p>
-                    <span class="price">$10.99</span>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="pizza9.jpg" alt="Italian Pasta">
-                <div class="menu-text">
-                    <h3>Classic Italian Pasta</h3>
-                    <p>Freshly made pasta tossed in rich tomato sauce with Parmesan cheese.</p>
-                    <span class="price">$10.99</span>
-                </div>
-            </div>
-        </div>
+    <section id="veg-menu">
+        <h1> ”A Celebration of Nature's Bounty.”</h1>
+<div class="menu-container">
+    <div class="menu-card">
+        <img src="margherita.jpg" alt="" class="menu-img">
+        <h3>Margherita</h3>
+        <p class="item-detail">The timeless classic with fresh mozzarella, basil, and rich tomato sauce.</p>
+        <span class="price">₹399</span>
+    </div>
+    <div class="menu-card">
+        <img src="marinara.jpg" alt="" class="menu-img">
+        <h3>Marinara</h3>
+        <p class="item-detail"> A bold, cheese-free classic topped with tomato, garlic, and herbs.</p>
+        <span class="price">₹449</span>
+    </div>
+    <div class="menu-card">
+        <img src="funghi-porcini.jpg" alt="" class="menu-img">
+        <h3>Margherita</h3>
+        <p class="item-detail">Earthy mushrooms meet creamy mozzarella on a golden crust.</p>
+        <span class="price">₹449</span>
+    </div>
+    <div class="menu-card">
+        <img src="ortolana.jpg" alt="" class="menu-img">
+        <h3>Margherita</h3>
+        <p class="item-detail">Grilled garden veggies with olive oil and herbs on a thin, crispy crust.</p>
+        <span class="price">₹529</span>
+    </div>
+    <div class="menu-card">
+        <img src="quattro-formaggi.jpg" alt="" class="menu-img">
+        <h3>Margherita</h3>
+        <p class="item-detail">  A cheesy delight with four indulgent Italian cheeses.</p>
+        <span class="price">₹499</span>
+    </div>
+    <div class="menu-card">
+        <img src="caprese.jpg" alt="" class="menu-img">
+        <h3>Margherita</h3>
+        <p class="item-detail">A pizza version of the beloved Caprese salad – fresh, simple, perfect.</p>
+        <span class="price">₹399</span>
+    </div>
+</div>
     </section>
-    
+    <div class="divider">
+        <hr>
+        <span>🍕</span>
+      </div>
+    <section id="nonveg-menu">
+        <h1> 🍕 Napoli’s Signature Meat Pizzas</h1>
+<div class="menu-container">
+    <div class="menu-card">
+        <img src="diavola.png" alt="" class="menu-img">
+        <h3>Diavola</h3>
+        <p class="item-detail">Spicy and bold with Italian pepperoni, tomato sauce, mozzarella, and chili oil.</p>
+        <span class="price">₹499</span>
+    </div>
+    <div class="menu-card">
+        <img src="pollo-e-funchi.png" alt="" class="menu-img">
+        <h3>Pollo E Funchi</h3>
+        <p class="item-detail"> Tender grilled chicken, mushrooms, mozzarella, and white garlic cream sauce.</p>
+        <span class="price">₹479</span>
+    </div>
+    <div class="menu-card">
+        <img src="prosciutto-e-rucola.png" alt="" class="menu-img">
+        <h3>Prosciutto E Rucola</h3>
+        <p class="item-detail">Cured Italian prosciutto, fresh arugula, mozzarella, and shaved parmesan.</p>
+        <span class="price">₹529</span>
+    </div>
+    <div class="menu-card">
+        <img src="salsiccia-piccante.png" alt="" class="menu-img">
+        <h3>Salsiccia Piccante</h3>
+        <p class="item-detail">Spicy Italian sausage with roasted red peppers, mozzarella, and tomato sauce.</p>
+        <span class="price">₹549</span>
+    </div>
+    <div class="menu-card">
+        <img src="tonna-e-cipolla.png" alt="" class="menu-img">
+        <h3>Tonna E Cipolla</h3>
+        <p class="item-detail">  Tuna and red onions over a base of tomato sauce and melted cheese.</p>
+        <span class="price">₹459</span>
+    </div>
+    <div class="menu-card">
+        <img src="polo-bbq-italiano.png" alt="" class="menu-img">
+        <h3>Polo BBQ Italiano</h3>
+        <p class="item-detail">A pizza version of the beloved Caprese salad – fresh, simple, perfect.</p>
+        <span class="price">₹499</span>
+    </div>
+</div>
+    </section>
+    <section id="chef-special">
+        <div class="chef-banner hidden">
+            <img src="chef1.jpg" alt="" class="chef1">
+        
+        <div class="banner-content">
+            <h1>Antonio Carluccio</h1>
+            <p class="banner-para">Introducing his famous "Truffle Delight Pizza" – loaded with wild mushrooms and white sauce.</p>
+            <span class="chef-special-price">₹499</span>
+        </div>
+    </div>
+        <div class="chef-banner hidden">
+            <img src="chef2.jpg" alt="" class="chef2">
+        <div class="banner-content">
+            <h1>Chef Massimo</h1>
+            <p class="banner-para">"Mediterranean Magic" with olives, sun-dried tomatoes, and feta cheese.</p>
+            <span class="chef-special-price">₹749</span>
+        </div>
+    </div>
+        <div class="chef-banner hidden">
+            <img src="chef3.jpg" alt="" class="chef3">
+        <div class="banner-content">
+            <h1>Chef Marco</h1>
+            <p class="banner-para">"Prosciutto Elegante" – rich with ham, arugula, and balsamic drizzle.</p>
+            <span class="chef-special-price">₹849</span>
+        </div>
+    </div>
+        <div class="chef-banner hidden">
+            <img src="chef4.jpg" alt="" class="chef4">
+        <div class="banner-content">
+            <h1>Chef Leonardo</h1>
+            <p class="banner-para">"Spicy Napoli" with pepperoni, chili flakes, and melted mozzarella.</p>
+            <span class="chef-special-price">₹699</span>
+        </div>
+    </div>
+        <div class="chef-banner hidden">
+            <img src="chef5.jpg" alt="" class="chef5">
+        <div class="banner-content">
+            <h1>Chef Gennaro</h1>
+            <p class="banner-para">"Rustica BBQ Chicken" with caramelized onions and smoky BBQ sauce.</p>
+            <span class="chef-special-price">₹899</span>
+        </div>
+    </div>
+    </section>
+    <section id="reviews">
+        <h2 class="review-heading">What Our Customers Say</h2>
+        <div class="review-container">
+          <div class="review-card">
+            <h3>⭐️⭐️⭐️⭐️⭐️</h3>
+            <p>"Absolutely the best pizza I've ever had. Napoli Slice is my new go-to!"</p>
+            <span>- Rhea Kapoor</span>
+          </div>
+          <div class="review-card">
+            <h3>⭐️⭐️⭐️⭐️</h3>
+            <p>"Authentic Italian taste and lovely ambiance. Highly recommend."</p>
+            <span>- Anuj Mehta</span>
+          </div>
+          <div class="review-card">
+            <h3>⭐️⭐️⭐️⭐️⭐️</h3>
+            <p>"The crust was perfect and the toppings were super fresh!"</p>
+            <span>- Simran Arora</span>
+          </div>
+          <!-- Add more cards as needed -->
+        </div>
+      </section>
 
+      <section id="contact">
+        <h2 class="contact-heading">Get In Touch</h2>
+        <div class="contact-wrapper">
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+      
+          <div class="contact-info">
+            <h3>Contact Details</h3>
+            <p><strong>📍 Address:</strong> Via Roma 12, Naples, Italy</p>
+            <p><strong>📞 Phone:</strong> +39 123 456 789</p>
+            <p><strong>✉️ Email:</strong> info@napolislice.com</p>
+          </div>
+        </div>
+      </section>
+            
+
+
+
+
+
+
+    <script>
+        const banners = document.querySelectorAll('.chef-banner');
+      
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+              observer.unobserve(entry.target); // Stop observing once visible
+            }
+          });
+        }, {
+          threshold: 0.2
+        });
+      
+        banners.forEach(banner => {
+          observer.observe(banner);
+        });
+      </script>
+           
 </body>
 </html>
