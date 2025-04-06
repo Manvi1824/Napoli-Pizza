@@ -27,6 +27,7 @@ body {
     z-index: 1000;
 
 }
+
 .navbar{
     gap: 4rem;
     align-items: center;
@@ -58,6 +59,34 @@ body {
 .navbar a:hover{
 
 color: #B22222;
+}
+@media (max-width:667px) {
+  .navbar {
+    width: 100%;
+    margin: auto;
+    gap: 2px;
+    /* margin-left: 2%; */
+    align-items: start;
+ 
+    /* text-align: start; */
+    flex-direction: column;
+    padding-left:2% ;
+    /* font-family: 4px; */
+  }
+  .navbar li{
+    /* padding-left: 2px; */
+    margin-left: 0%;
+    text-align: left;
+  }
+  .navbar li a{
+font-size: 7px;
+
+
+  }
+ img.logo{
+    max-width: 40px;
+  }
+
 }
 .dropdown-content {
     display: none;
@@ -106,7 +135,7 @@ color: #B22222;
 /* Pseudo-element for background blur */
 #home::before {
     content: "";
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -138,6 +167,46 @@ color: #B22222;
     font-size: 2.1rem;
     margin: 1%;
 }
+ @media (max-width:667px){
+  /* #home{
+    width: 100%;
+    align-items: center;
+  }
+  #home::before{
+    width: 100%;
+  }
+  .hero-heading{
+    font-size: 25px;
+    width: 18rem;
+  }
+  .hero-subheading{
+    font-size: 20px;
+    width: 15rem;
+  } */ 
+
+  #home{
+    display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center */
+  align-items: center;     /* Horizontally center */
+  text-align: center;
+  width: 78vw;
+  height: 40vh;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.hero-heading {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.hero-subheading {
+  font-size: 1.2rem;
+  margin-top: 0px;
+}
+}
+
 #about{
     display: flex;
     text-align: center;
@@ -149,6 +218,26 @@ border: 6px solid #5A3E2B;
 border-radius: 8px;
 
     
+}
+@media (max-width:667px) {
+  #about{
+    flex-direction: column;
+    width: 78vw;
+  }
+  img.img1{
+    width:150px ;
+    border-radius: 20%;
+  }
+  h1{
+    font-size: 18px;
+  }
+  .about p{
+    font-size: 15px;
+  }
+  .about ul li{
+font-size: 11px;
+  }
+
 }
 .about{
     margin: 30px;
@@ -206,6 +295,53 @@ margin-top: 40px;
     transform: scale(1.05);     /* Slight zoom effect */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
+/* @media (max-width:667px) { */
+  /* #veg-menu{
+    height: 100vh;
+  }
+  .menu-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .menu-card {
+    width: 100%;
+    padding: 20px;
+  } */
+  @media (max-width: 667px) {
+    .menu-container {
+      grid-template-columns: 1fr !important;
+      justify-items: center !important;
+      padding: 10px;
+    }
+  
+    .menu-card {
+      max-width: 78%;
+      padding: 12px !important;
+    }
+  #veg-menu,#nonveg-menu{
+    border-left: none !important;
+  }
+    #veg-menu h1,
+    #nonveg-menu h1 {
+      font-size: 15px;
+      /* border: none; */
+    }
+  
+    .item-detail {
+      font-size: 10px !important;
+
+    }
+  
+    .divider span {
+      font-size: 18px;
+    }
+    img.menu-img{
+      max-width: 150px;
+    }
+  }
+  
+/* } */
 #veg-menu{
     background-color: #F2FFF0;
     padding: 12px;
@@ -221,6 +357,7 @@ border-left: 30px solid #228B22;
 .menu-container{
     display: grid;
     grid-template-columns:repeat(3,1fr) ;
+    justify-items: center;
     width: auto;
     height: auto;
     margin: 0 auto; /* centers container in the page */
@@ -232,8 +369,8 @@ border-left: 30px solid #228B22;
 }
 .menu-card{
     background-color: #D6A77A;
-
-    width: 300px;
+width: 100%;
+    max-width: 300px;
     margin: 3px;
     padding: 30px;
     border-radius: 20px;
@@ -511,22 +648,7 @@ text-align: center;
       flex: 0 1 48%;
     }
   }
-  .cart-btn {
-    background-color: #8B0000;
-    color: white;
-    padding: 5px 6px;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s ease;
-    margin-top: 12px;
-  }
-  
-  .cart-btn:hover {
-    background-color: #A52A2A;
-    transform: scale(1.05);
-  }
+
   .sticky-cart {
     position: fixed;
     right: 20px;
@@ -546,10 +668,40 @@ text-align: center;
     transform: scale(1.1);
     background-color: #A52A2A;
   }
-  
-  
 
 
-  @media (max-width:786px){
 
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* @media (max-width:667px){
+.header{
+  visibility: hidden;
+}
+.hamburger{
+  visibility: visible;
+  list-style: none;
+  padding: 2%;
+  font-size: 30px;
+  background-color: #8B0000;
+}
+  } */
