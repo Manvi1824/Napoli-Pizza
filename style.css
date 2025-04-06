@@ -84,7 +84,10 @@ font-size: 7px;
 
   }
  img.logo{
-    max-width: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+    max-width: 120px;
   }
 
 }
