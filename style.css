@@ -175,7 +175,7 @@ font-size: 7px;
   align-items: center;     /* Horizontally center */
   text-align: center;
   width: 100vw;
-  height: 40vh;
+  /* height: 40vh; */
   padding: 0 20px;
   box-sizing: border-box;
 }
